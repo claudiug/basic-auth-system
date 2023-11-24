@@ -12,3 +12,4 @@ class BaseDecorator:
                 print(f'Permission denied for {function_name}')
         else:
             print(f'Permission check method not found for {function_name}')
+            return lambda: None
